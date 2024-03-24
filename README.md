@@ -12,6 +12,10 @@ Este proyecto es una pagina creada para la empresa ficticia "Dulceria" creado pu
   + **HTML5**: Para la estructura básica del sitio.
   +  **CSS3**: Para el diseño y estilo. incluyendo _flexbox_ para un diseño responsivo.
 
+
+### Enlace de visualizacion
+[Dulceria](https://dulceria-omega.vercel.app/)
+
 ### Vista Previa del proyecto 
 ![Demo](/imagenes/captura.jpeg)
 
