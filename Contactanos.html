@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactanos</title>
+<link href="Estilos.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
+</head>
+<body>
+
+<div class="contact-info">
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-linkedin"></i></a>
+  <a href="#"><i class="far fa-envelope"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <p>Ubicación: <a href="#"><i class="fas fa-map-marker-alt"></i></a></p>
+</div>
+
+<form id="indexForm">
+    <button type="submit" class="styled-button">Ir al Inicio</button>
+  </form>
+
+<script>
+  document.getElementById("indexForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      window.location.href = "index.html";
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulceria Saltamonte</title>
+    <link href="Estilos.css" rel="stylesheet" type="text/css">
+    <script>
+        var currentImageIndex = 0;
+        
+        function changeImage() {
+            var images = document.getElementsByClassName('carousel-image');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            images[currentImageIndex].style.display = "block";
+        }
+        
+        setInterval(changeImage, 3000);
+    </script>
+</head>
+<body>
+    <center><h1>Dulceria Saltamonte</h1></center>
+   
+    <div class="carousel-container">
+        <img class="carousel-image" src="imagenes/f1.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f2.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f3.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f4.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f5.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f6.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f7.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f8.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f9.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f10.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f11.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f12.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f13.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f14.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f15.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f16.jpeg" alt="Imagen">
+        <img class="carousel-image" src="imagenes/f17.jpeg" alt="Imagen">
+        
+    </div>
+
+    <form id="indexForm">
+        <button type="submit" class="styled-button">Ir al Inicio</button>
+    </form>
+    <script>
+        var currentImageIndex = 0;
+
+        function changeImage() {
+            var images = document.getElementsByClassName('carousel-image');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            for (var i = 0; i < images.length; i++) {
+                images[i].classList.remove('centered');
+            }
+
+            images[currentImageIndex].classList.add('centered');
+        }
+
+        setInterval(changeImage, 3000);
+    </script>
+</body>
+</html>

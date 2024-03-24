@@ -1,0 +1,59 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dulceria Saltamontes</title>
+  <link href="estilos4.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Dulceria Saltamontes</h1>
+  <p>Nuestra dulceria se esmera por tener dulces frescos y de calidad para asegurar un momento agradable, por lo que nos ponemos a su disposición con los siguientes servicios:</p>
+  <ul>
+    <li>Bodas</li>
+    <li>Banquetes</li>
+    <li>Fiestas infantiles</li>
+    <li>Graduaciones</li>
+    <li>Y cualquier evento social que tenga, ya sea contratando nuestro servicio de mesa de dulces, recuerdos o invitaciones.</li>
+  </ul>
+  <p>Recuerde que también contamos con cotizaciones para cualquier idea que tenga. Usted lo imagina y nosotros lo hacemos realidad con dulces.</p>
+  
+  <div class="slider-container">
+    <div class="slider">
+      <img src="imagenes/i1.jpeg" alt="Imagen 1">
+      <img src="imagenes/i2.jpeg" alt="Imagen 2">
+      <img src="imagenes/i3.jpeg" alt="Imagen 3">
+      <img src="imagenes/i4.jpeg" alt="Imagen 4">
+      <img src="imagenes/i5.jpeg" alt="Imagen 5">
+      <img src="imagenes/i6.jpeg" alt="Imagen 6">
+      <img src="imagenes/i7.jpeg" alt="Imagen 7">
+      <img src="imagenes/i8.jpeg" alt="Imagen 8">
+      <img src="imagenes/i9.jpeg" alt="Imagen 9">
+      <img src="imagenes/i10.jpeg" alt="Imagen 10">
+    </div>
+  </div>
+  
+
+  <script>
+    const slides = document.querySelectorAll('.slider img');
+    let currentSlide = 0;
+    function nextSlide() {
+      slides[currentSlide].style.display = 'none';
+         currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.display = 'block';
+    }
+    setInterval(nextSlide, 2000);
+  </script>
+  <form id="indexForm">
+    <button type="submit" class="styled-button">Ir al Inicio</button>
+  </form>
+
+<script>
+  document.getElementById("indexForm").addEventListener("submit", function(event){
+      event.preventDefault();
+      window.location.href = "index.html";
+  });
+</script>
+
+
+</body>
+</html>

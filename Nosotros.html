@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nosotros</title>
+<link href="Estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+<p>Somos un pequeño emprendimiento dedicado a la distribución de dulces para eventos sociales brindando diferentes opciones en nuestras presentaciones, teniendo barra de dulces, mesa de dulces, o arreglos de dulces para cada mesa.</p>
+
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion">Estos son algunos testimonios de nuestros clientes...</h3>
+        
+        <!-- Carrusel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="imagenes/testi1.jpg" alt="Foto de Nancy">
+                <p class="testimonio-texto">¡La experiencia en la dulcería fue increíble! Organizamos una fiesta de cumpleaños para mi hijo y decidimos incluir una mesa de dulces. La variedad de golosinas era asombrosa, desde chocolates hasta chicles de colores brillantes. Los invitados quedaron impresionados y los niños no podían contener su emoción. ¡Definitivamente volveremos por más para nuestro próximo evento!
+                  </p>
+        
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="imagenes/testi2.jpg" alt="Foto de Nora">
+                <p class="testimonio-texto"> ¡La dulcería hizo de mi boda un evento inolvidable! Nos encargamos de cada detalle de la decoración, y la mesa de dulces fue el punto focal. La disposición de los dulces era elegante y tentadora. Desde los clásicos caramelos hasta los malvaviscos cubiertos de chocolate, todo estaba delicioso. Recibimos muchos elogios de nuestros invitados y, por supuesto, ¡disfrutamos cada bocado nosotros mismos!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="imagenes/testi3.jpg" alt="Foto de Leonardo">
+                <p class="testimonio-texto">La dulcería fue la solución perfecta para nuestro evento corporativo. Queríamos algo que pudiera atraer a personas de todas las edades, ¡y la mesa de dulces lo logró! Los empleados estaban encantados con la selección de dulces, y la presentación era impecable. No solo nos ayudó a endulzar el ambiente, sino que también fue un excelente tema de conversación entre los asistentes. ¡Gracias por hacer que nuestro evento sea tan memorable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+     
+      <form id="indexForm">
+        <button type="submit" class="styled-button">Ir al Inicio</button>
+      </form>
+    
+    <script>
+      document.getElementById("indexForm").addEventListener("submit", function(event){
+          event.preventDefault();
+          window.location.href = "index.html";
+      });
+    </script>
+    
+
+</body>
+</html>
